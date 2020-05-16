@@ -1,0 +1,115 @@
+/*Globals*/
+.page-container {
+    margin: 0 10vw 0 10vw;
+}
+
+
+/*Carousel*/
+    .carousel-inner{
+        width:100%;
+        max-height: 50vh !important;
+    }
+
+    .carousel-item {
+    vertical-align: middle;
+    display: table-cell;
+    text-align:center;
+    }
+
+    .carousel-inner img{
+    display:inline-block  !important;
+    }
+
+#right-row {
+    height: 60vh;
+}
+
+#right-image {
+    background-image: url(https://lp-cms-production.imgix.net/2019-06/79941051.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4);
+    background-color: black;
+    background-repeat: no-repeat;
+    /* background-position: center;  Center the image */
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    width: 100%;
+}
+
+#right-image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 10vh 0 10vh 0;
+    width: 100%;
+    /*background-color: lightgray;*/
+    overflow: hidden;
+}
+
+#left-image {
+    /*background-image: url(https://lp-cms-production.imgix.net/2019-06/79941051.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4);*/
+    background-color: black;
+    background-repeat: no-repeat;
+    /* background-position: center;  Center the image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#home-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#left-image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    margin-left: -12vw;
+    margin-right: -12vw;
+}
+
+#header-image {
+    padding-top: 0px;
+}
+
+#header-text {
+    color: white;
+    padding-top: 170px;
+}
+
+.quote {
+    height: 100%;
+}
+
+.blog-footer {
+    background: #DCDCDCf;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-container {
+    width: 100%;
+}
+
+.jumbotron {
+    background-image: url("https://res.cloudinary.com/simpleview/image/upload/v1486505969/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg");
+    background-size: cover;
+  }
+
+  .main-article {
+      width: 60%;
+      height: auto;
+  }
