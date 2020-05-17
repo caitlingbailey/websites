@@ -3,11 +3,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.page-container {
-    margin: 0 10vw 0 10vw;
-}
-
-
 /*Carousel*/
     .carousel-inner{
         width:100%;
@@ -24,29 +19,16 @@ body {
     display:inline-block  !important;
     }
 
-#right-row {
-    height: 60vh;
-}
-
-
 .container-fluid {
     padding: 10vh 0 10vh 0;
     overflow: hidden;
 }
 
-
-#home-image {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-
 .parallax-window {
     min-height: 400px;
     background: transparent;
-    margin-left: -12vw;
-    margin-right: -12vw;
+    margin-left: -22vw;
+    margin-right: -22vw;
 }
 
 #header-image {
@@ -62,23 +44,12 @@ body {
     height: 100%;
 }
 
-.blog-footer {
-    background: #DCDCDCf;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#footer-container {
-    width: 100%;
-}
-
 .jumbotron {
     background-image: url("https://res.cloudinary.com/simpleview/image/upload/v1486505969/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg");
     background-size: cover;
-  }
+}
 
-  .main-article {
-      width: 60%;
-      height: auto;
-  }
+.main-article {
+    width: 60%;
+    height: auto;
+}
