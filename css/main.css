@@ -1,0 +1,112 @@
+/*Fill page*/
+.full-page {
+    background-color: darkgrey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: transform .2s; /* Animation */
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+.row {
+    overflow: hidden;
+    margin-top: 10vh;
+    box-shadow: 0px 10px 8px #888888;
+}
+
+.horizontal-pictures {
+    /*height: 100vh;*/
+    background-color: darkgrey;
+    overflow: hidden;
+    color: white;
+}
+
+/*Background Images*/
+#column-1 {
+    background-image: url(https://images.radio.com/sunny981sd/maple%20leaves.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+#column-2 {
+    background-image: url(https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+#column-3 {
+    background-image: url(https://hips.hearstapps.com/ghk.h-cdn.co/assets/15/33/1439490128-plants.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+#column-4 {
+    background-image: url(https://cdn.britannica.com/18/196818-131-84946E03/Maple-Colors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.hover-picture {
+    transition: transform .2s; /* Animation */
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.hover-picture > div {
+    height: 80vh;
+    width: 100%;
+    padding-top: 70vh;
+    transition: transform .2s; /* Animation */
+}
+.parent:hover > a {
+    opacity: 0.5;
+}
+
+
+.parent:hover > a:hover {
+    opacity: 1.0;
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow: hidden;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.parent:hover > a:hover > div {
+    transform: translateY(-10vh);
+}
+
+  .picture-column {
+      overflow: hidden;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+        padding:0;
+        margin:0;
+      }
+  
+      body {
+        padding:0;
+      }
+  }
