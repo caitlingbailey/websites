@@ -1,6 +1,7 @@
 /*Fill page*/
 .full-page {
     background-color: darkgrey;
+    /*overflow: scroll;*/
 }
 
 a {
@@ -34,9 +35,19 @@ a:hover {
 .horizontal-pictures {
     /*height: 100vh;*/
     background-color: darkgrey;
-    overflow: hidden;
+    overflow: scroll;
     color: white;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.horizontal-pictures::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+  .horizontal-pictures {
+    -ms-overflow-style: none;
+  }
 
 /*Background Images*/
 #column-1 {
@@ -44,6 +55,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    overflow: hidden;
 }
 #column-2 {
     background-image: url(https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
