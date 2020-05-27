@@ -202,18 +202,26 @@ body {
 .nav div.logo {
     float: left;
     width: auto;
-    height: auto;
     padding-left: 3rem;
+    padding-top: ;
+    max-height: 70px;
+
 }
 
 .nav div.logo a {
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
+    max-height: 70px;
 }
 
-.nav div.logo a:hover {
-    color: #00E676;
+.nav div.logo a img {
+    max-height: 100px;
+    transition: ease;
+}
+
+.nav div.logo a img:hover {
+    transform: translateY(2px);
 }
 
 .nav div.main_list {
