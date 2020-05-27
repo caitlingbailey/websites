@@ -21,8 +21,8 @@
   </head>
 
   <body>
-    <div class="page-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="page-container-outer">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
         <a class="navbar-brand" href="https://caitlingbailey.github.io/websites/blog/#">ScratchMapProject</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Europe</a>
                 <a class="dropdown-item" href="https://caitlingbailey.github.io/websites/blog/canada/">Canada</a>
-                <div class="dropdown-divider"></div>
+                  <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
@@ -51,13 +51,30 @@
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
             </li>
           </ul>
-          <!--<form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>-->
         </div>
-      </nav>
+        <span class="nav-trigger"></span>
+      </nav> -->
 
+      <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Scratch Map Project</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="https://caitlingbailey.github.io/websites/blog/#">Home</a></li>
+                    <li><a href="https://caitlingbailey.github.io/websites/blog/about/">About</a></li>
+                    <li><a href="https://caitlingbailey.github.io/websites/blog/canada/">Destinations</a></li>
+                    <li><a href="https://caitlingbailey.github.io/websites/blog/canada/">Blog</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
     <!-- Swiper Carousel -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3500">
         <ol class="carousel-indicators">
@@ -90,6 +107,7 @@
         </a>
       </div>
 
+    <div class="page-container container">
     <!-- Quote -->
     <div class="container-fluid text-center quote">
       <div>
@@ -196,8 +214,9 @@ A management consultant from the UK, usually finding myself on crazy adventures 
           </div>
         </footer>
     </div>
-  
   </div>
+  </div>
+
 
 
 
@@ -206,5 +225,18 @@ A management consultant from the UK, usually finding myself on crazy adventures 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+  </script>
   </body>
 </html>
