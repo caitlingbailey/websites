@@ -62,8 +62,8 @@
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="https://caitlingbailey.github.io/websites/blog/#">Home</a></li>
-                    <li><a href="https://caitlingbailey.github.io/websites/blog/about/">About</a></li>
-                    <li><a href="https://caitlingbailey.github.io/websites/blog/canada/">Destinations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
                     <li><a href="https://caitlingbailey.github.io/websites/blog/canada/">Blog</a></li>
                 </ul>
             </div>
@@ -173,19 +173,47 @@ A management consultant from the UK, usually finding myself on crazy adventures 
       </div>
     </div>
     <!-- Article -->
-    <div class="container-fluid">
+    <div class="container-fluid text-center justify-content-center row mb-2" id="about">
+      <!-- <div class="container text-center justify-content-center row mb-2"> -->
+        <div class="col-md-6">
+          <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static" id="about-paragraph">
+              <h3>About me</h3>
+              <p>My name is Caitlin, and I created this blog, Scratch Map Project. For some context to the name, I have a giant scratch map on my wall, and my “project” is that I want to be able to scratch off as much as possible!</p>
+              <p>After this new bout of exploration, I realised that I’d been in education non-stop for almost 18 years, wow! During my final year, I took advantage of the fact I had fewer hours to take some spontaneous trips. These included my first trip to Spain, and multiple trips to Slovenia. Being shown around Slovenia by a local meant I barely ran into any tourists, and learnt so much about the country in the process. In Barcelona, we scouted out some tucked away bars and restaurants, to find the most amazing food. So, I decided I wanted to continue this, and turned down a full-time Investment Banking job offer to go travelling. Sorry mum!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static" id="about-picture">
+                <!--Space here for parallax picture-->
+                <div class="parallax-window" data-parallax="scroll" data-image-src="./resources/images/headers/FullSizeRender (2).jpg">
+                </div>
+                <!-- <h3>About me</h3>
+                <p>My name is Caitlin, and I created this blog, Scratch Map Project. For some context to the name, I have a giant scratch map on my wall, and my “project” is that I want to be able to scratch off as much as possible!</p>
+                <p>After this new bout of exploration, I realised that I’d been in education non-stop for almost 18 years, wow! During my final year, I took advantage of the fact I had fewer hours to take some spontaneous trips. These included my first trip to Spain, and multiple trips to Slovenia. Being shown around Slovenia by a local meant I barely ran into any tourists, and learnt so much about the country in the process. In Barcelona, we scouted out some tucked away bars and restaurants, to find the most amazing food. So, I decided I wanted to continue this, and turned down a full-time Investment Banking job offer to go travelling. Sorry mum!</p> -->
+              </div>
+            </div>
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="horizontal-rule">
+      <div>
+        <hr>
+      </div>
+    </div>
+    <!-- Article -->
+    <div class="container-fluid" id="destinations"> 
       <div class="row">
         <div class="col">
 
         </div>
       <div class="container text-center justify-content-center ">
         <div class="col-md">
-          <h3>Canada</h3>
-          <p>The place I've called home for the past few years, Canada will always have a special place in my heart. From moving to Vancouver in 2018, I've constantly discovered new things to love, places to explore and amazing people to meet.</p>
-          <p>It's difficult to categorize Canada in terms of a travel destination.</p>
-          <p>Being the world's second largest country in regards to land mass, you'll find an extraordinary amount of diversity in the culture, history, as well as the natural and man-made attractions.</p>
-          <p>There are high mountain ranges, sparse plateaus, desert-like areas, forested valleys, stunning lakes, seemingly endless prairies, modern cities, as well as a tremendous assortment of flora and fauna. Not to mention, there's a Tim Hortons (Canada's beloved coffee and donut shop, named after the late NHL hockey player Tim Horton) in almost every city and town across the country.</p>
-          <p>Whether you wish to spend your time hiking through the Rockies, learning about the maritime history of the east coast, or exploring the cosmopolitan cities of Toronto, Montreal, and Vancouver, this is a country where every traveler will find something to their liking.</p>
+          <h3>Where do you want to go?</h3>
+          <p>Look below for a list of destinations and photos to inspire you for your next trip.</p>
       </div>
     </div>
       <div class="col">
@@ -235,6 +263,7 @@ A management consultant from the UK, usually finding myself on crazy adventures 
               $('.nav').addClass('affix');
               console.log("OK");
               $('.logo-img').css({"max-height": "59px"});
+              $('.navlinks').css({"text-color": "orange"});
           } else {
               $('.nav').removeClass('affix');
               $('.logo-img').css({"max-height": "100px"});
