@@ -121,6 +121,11 @@
     .nav div.media_button {
         display: block;
     }
+
+    .nav div.logo a img {
+        height: 15vw;
+        transition: ease;
+    }
 }
 
 
