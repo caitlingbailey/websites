@@ -1,116 +1,4 @@
-/*Globals*/
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-.carousel {
-    width: 100%;
-}
-
-.carousel-inner
-
-/*Swiper*/
-.swiper-container {
-	width: 100%;
-}
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-.main-slider .slider-bg-position {
-	background-size: cover!important;
-	background-position: center center!important;
-}
-.main-slider .swiper-button-prev, .main-slider .swiper-button-next {
-	background-image: none!important;
-	color: #fff;
-	width: 50px;
-	height: 50px;
-	border: 1px solid #fff;
-	text-align: center;
-	line-height: 50px;
-	font-size: 20px;
-}
-.main-slider h2 {
-	color: #fff;
-	font-size: 54px;
-	line-height: 59px;
-	padding: 0 19%;
-	text-transform: uppercase;
-}
-.main-slider .swiper-pagination-bullet {
-	width: 20px;
-	height: 20px;
-	background: rgba(255,255,255,0.9)
-}
-.main-slider .swiper-pagination-bullet-active {
-	background: #0297ff
-}
-
-/*Carousel*/
-    .carousel-inner{
-        width:100%;
-        max-height: 65vh !important;
-        min-height: 30%;
-    }
-
-    .carousel-item {
-    vertical-align: middle;
-    display: table-cell;
-    text-align:center;
-    }
-
-    .carousel-inner img{
-    display:inline-block  !important;
-    }
-
-
-.container-fluid {
-    padding: 10vh 0 10vh 0;
-    overflow: hidden;
-}
-
-.quote {
-    height: 100%;
-}
-
-.blog-footer {
-    background: #DCDCDCf;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.jumbotron {
-    background-image: url("https://res.cloudinary.com/simpleview/image/upload/v1486505969/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg");
-    background-size: cover;
-  }
-
-  .main-article {
-      width: 60%;
-      height: auto;
-  }
-
-/* Navbar section
+/* Navbar section */
 
 .nav {
     width: 100%;
@@ -119,6 +7,10 @@ body {
     line-height: 65px;
     text-align: center;
     z-index: 15;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .nav div.logo {
@@ -127,7 +19,6 @@ body {
     padding-left: 1.7rem;
     padding-top: ;
     max-height: 70px;
-
 }
 
 .nav div.logo a {
@@ -176,35 +67,13 @@ body {
 
 .nav div.main_list ul li a:hover {
     color: grey;
-} */
-
-
-/* Home section */
-
-.home {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
-    background-position: center top;
-	background-size:cover;
 }
 
-/* .navTrigger {
+.navTrigger {
     display: none;
 }
 
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-} */
-
-.parallax-window {
-    min-height: 400px;
-}
-
-/* Media qurey section
+/* Media query section */
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
     .container {
@@ -452,10 +321,6 @@ body {
     background-color: #111;
 }
 
-
-
-
-
 .myH2 {
 	text-align:center;
 	font-size: 4rem;
@@ -470,4 +335,4 @@ body {
 	.myP {
 		padding:2%;
 	}
-} */
+}
