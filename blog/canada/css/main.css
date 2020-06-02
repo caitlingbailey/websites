@@ -25,6 +25,7 @@ body {
 }
 
 .parallax-window {
+    max-height: 65vh;
     min-height: 400px;
     background: transparent;
     margin-left: -22vw;
