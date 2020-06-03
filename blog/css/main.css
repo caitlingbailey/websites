@@ -9,144 +9,120 @@ a {
   text-decoration: none;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-.carousel {
-    width: 100%;
-}
-
-.carousel,
-.carousel-item,
-.carousel-item.active {
-  height: 100vh;
-}
-.carousel-inner {
-  height: 100%;
-}
-
-@media screen and (max-width:992px) {
-  .carousel,
-.carousel-item,
-.carousel-item.active {
-  height: 100%;
-}
-}
-
-.carousel-item:nth-child(1) {
-  background-image: url("./resources/images/headers/elephants full.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.carousel-item:nth-child(2) {
-  background-image: url("./resources/images/headers/elephants full.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.carousel-item:nth-child(3) {
-  background-image: url("./resources/images/headers/elephants full.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-     .carousel .carousel-indicators li {
-        width: 10px;
-       height: 10px;
-       border-radius: 100%;
-       z-index: 6;
-     }
-
-     .carousel-control-prev {
-       z-index: 7;
-     }
-
-     .carousel-caption {
-      top: 50%;
-      transform: translateY(-50%);
-      bottom: initial;
-     }
-     .view {
-     -webkit-transform-style: preserve-3d;
--moz-transform-style: preserve-3d;
-transform-style: preserve-3d;
-     }
-
-     .carousel-caption h2 {
-       font-size: 4rem;
-     }
-     .carousel-caption p {
-      font-size: 2rem;
-    }
-
-    #overlay {
-      position: fixed; /* Sit on top of the page content */
-      /* display: none; Hidden by default */
-      width: 100%; /* Full width (cover the whole page) */
-      height: 100%; /* Full height (cover the whole page) */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      /* background-color: rgba(0,0,0,0.5); Black background with opacity */
-      z-index: 15; /* Specify a stack order in case you're using a different order for other elements */
-    }
-    #text{
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      left: 50%;
-      font-size: 50px;
-      color: white;
-      transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-    }
-
-    #inner-box {
-      background: none;
-      height: 100%;
-      width: 100%;
-      /* opacity: .5; */
-      top: 0;
-      left: 0;
-      position: absolute;
-      padding: 0;
-      transition: opacity .5s;
-      z-index: 5;
-    }
-
-    #inner-box-text {
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      left: 50%;
-      color: white;
-      transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%); 
-    }
-
-    #inner-box h2 {
-      font-size: 3rem;
-    }
-
-    #inner-box p {
-      font-size: 2rem;
-    }
-
-    .fa-arrow-down {
-      color: white;
-    }
-
 .container-fluid {
-    padding: 10vh 0 10vh 0;
-    overflow: hidden;
+  padding: 10vh 0 10vh 0; /*top and bottom padding */
+  overflow: hidden;
 }
 
 .quote {
-    height: 100%;
+  height: 100%;
 }
+
+
+/* CAROUSEL 
+-------------------------------------------------- */
+  .carousel {
+  width: 100%;
+  }
+
+  .carousel,
+  .carousel-item,
+  .carousel-item.active {
+  height: 100vh;
+  }
+  .carousel-inner {
+  height: 100%;
+  }
+
+  @media screen and (max-width:992px) {
+  .carousel,
+  .carousel-item,
+  .carousel-item.active {
+  height: 100%;
+  }
+  }
+  /* Remove? */
+  .carousel-item:nth-child(1) {
+  background-image: url("./resources/images/headers/elephants full.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+  .carousel-item:nth-child(2) {
+  background-image: url("./resources/images/headers/elephants full.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+  .carousel-item:nth-child(3) {
+  background-image: url("./resources/images/headers/elephants full.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+
+  .carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  z-index: 6;
+  }
+
+  .carousel-control-prev {
+  z-index: 7;
+  }
+
+  .view {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  }
+
+  .carousel-caption h2 {
+  font-size: 4rem;
+  }
+  .carousel-caption p {
+  font-size: 2rem;
+  }
+
+    /* Carousel Overlay */
+
+    #inner-box {
+    background: none;
+    height: 100%;
+    width: 100%;
+    /* opacity: .5; */
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+    z-index: 5;
+    }
+
+    #inner-box-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%); /*move text to center */
+    -ms-transform: translate(-50%,-50%); 
+    }
+
+    #inner-box h2 {
+    font-size: 3rem;
+    }
+
+    #inner-box p {
+    font-size: 2rem;
+    }
+
+    .fa-arrow-down {
+    color: white;
+    }
+
+
 
 .blog-footer {
     background: #DCDCDCf;
@@ -160,22 +136,18 @@ transform-style: preserve-3d;
     background-size: cover;
   }
 
-  .main-article {
-      width: 60%;
-      height: auto;
-  }
-
 
 /* Home section */
 
-.home {
+/* .home {
     width: 100%;
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
     background-position: center top;
 	background-size:cover;
-}
+} */
 
-.parallax-window {
+/* Move to Canada page? */
+/* .parallax-window {
     min-height: 400px;
-}
+} */

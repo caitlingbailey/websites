@@ -1,28 +1,4 @@
-/*Globals*/
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*Carousel*/
-    .carousel-inner{
-        width:100%;
-        max-height: 50vh !important;
-    }
-
-    .carousel-item {
-    vertical-align: middle;
-    display: table-cell;
-    text-align:center;
-    }
-
-    .carousel-inner img{
-    display:inline-block  !important;
-    }
-
-.container-fluid {
-    padding: 10vh 0 10vh 0;
-    overflow: hidden;
-}
+/* Page Specific CSS */
 
 .parallax-window {
     max-height: 65vh;
@@ -40,36 +16,3 @@ body {
     color: white;
     padding-top: 170px;
 }
-
-.quote {
-    height: 100%;
-}
-
-.jumbotron {
-    background-image: url("https://res.cloudinary.com/simpleview/image/upload/v1486505969/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg");
-    background-size: cover;
-}
-
-.main-article {
-    width: 60%;
-    height: auto;
-}
-
-/* Navigation*/
-.navbar {
-    background-color: transparent;
-  }
-  .scrolling-navbar {
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
-  }
-  .top-nav-collapse {
-    background-color: #667490;
-  }
-  footer.page-footer {
-    background-color: #667490;
-  }
-  @media only screen and (max-width: 768px) {
-    .navbar {
-      background-color: #667490;
-    }
-  }
