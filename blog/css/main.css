@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -52,6 +56,11 @@ body {
         width: 10px;
        height: 10px;
        border-radius: 100%;
+       z-index: 6;
+     }
+
+     .carousel-control-prev, .carousel-control-next {
+       z-index: 7;
      }
 
      .carousel-caption {
@@ -93,6 +102,41 @@ transform-style: preserve-3d;
       color: white;
       transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
+    }
+
+    #inner-box {
+      background: none;
+      height: 100%;
+      width: 100%;
+      /* opacity: .5; */
+      top: 0;
+      left: 0;
+      position: absolute;
+      padding: 0;
+      transition: opacity .5s;
+      z-index: 5;
+    }
+
+    #inner-box-text {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%); 
+    }
+
+    #inner-box h2 {
+      font-size: 3rem;
+    }
+
+    #inner-box p {
+      font-size: 2rem;
+    }
+
+    .fa-arrow-down {
+      color: white;
     }
 
 .container-fluid {
