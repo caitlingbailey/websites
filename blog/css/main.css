@@ -135,3 +135,215 @@ a {
     background-image: url("https://res.cloudinary.com/simpleview/image/upload/v1486505969/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg");
     background-size: cover;
   }
+
+
+/* Globals */
+a,  {
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.site-section {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.article > img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.post-category {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.grid-container {
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 10%;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "article2 article2 article1 article1" "article3 article4 article1 article1";
+}
+
+.article {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: end;
+  transition: transform .2s;
+}
+
+.article-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  /* align-items: flex-end; */
+}
+
+.article-link:hover {
+  text-decoration: none;
+}
+
+.article-link > span {
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-size: 90%;
+  padding: 2px;
+}
+
+.text > span {
+  color: darkgray;
+  font-size: 70%;
+}
+
+.article1 { 
+    grid-area: article1;
+    background-image: url('https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    background-color: hsla(0, 0, 0, 0.7);
+    background-blend-mode: screen;
+    color: lightgrey;
+}
+
+.article2 { 
+    grid-area: article2;
+    background-image: url('https://images.unsplash.com/photo-1489447068241-b3490214e879?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+   }
+
+.article3 { 
+    grid-area: article3;
+    background-image: url('https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); 
+  }
+
+.article4 { 
+    grid-area: article4;
+    background-image: url('https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+   }
+
+
+.tall {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.text {
+  padding: 10px;
+}
+
+
+
+  .location-title {
+    color: white;
+    text-decoration: inherit;
+  }
+  
+  .location-title:link {
+    color: white;
+    text-decoration: inherit;
+  }
+  
+  .location-title:hover {
+    color: white;
+    text-decoration: inherit;
+  }
+
+  .location-image a img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  h2 {
+    margin-bottom: .5em;
+  }
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  .gallery {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0 10px 0
+  }
+
+  .destination-grid {
+      text-align: center;
+  }
+  
+  /* hover styles */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
