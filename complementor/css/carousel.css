@@ -1,0 +1,102 @@
+/* CAROUSEL 
+-------------------------------------------------- */
+.carousel {
+    width: 100%;
+    }
+  
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+    height: 100vh;
+    }
+    .carousel-inner {
+    height: 100%;
+    }
+  
+    @media screen and (max-width:992px) {
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+    height: 100%;
+    }
+    }
+    /* Remove? */
+    .carousel-item:nth-child(1) {
+    background-image: url("./resources/images/headers/elephants full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+    background-image: url("./resources/images/headers/elephants full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+    background-image: url("./resources/images/headers/elephants full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+  
+    .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    z-index: 6;
+    }
+  
+    .carousel-control-prev {
+    z-index: 7;
+    }
+  
+    .view {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    }
+  
+    .carousel-caption h2 {
+    font-size: 4rem;
+    }
+    .carousel-caption p {
+    font-size: 2rem;
+    }
+  
+      /* Carousel Overlay */
+  
+      #inner-box {
+      background: none;
+      height: 100%;
+      width: 100%;
+      /* opacity: .5; */
+      top: 0;
+      left: 0;
+      position: absolute;
+      padding: 0;
+      transition: opacity .5s;
+      z-index: 5;
+      }
+  
+      #inner-box-text {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      color: white;
+      transform: translate(-50%,-50%); /*move text to center */
+      -ms-transform: translate(-50%,-50%); 
+      }
+  
+      #inner-box h2 {
+      font-size: 3rem;
+      }
+  
+      #inner-box p {
+      font-size: 2rem;
+      }
+  
+      .fa-arrow-down {
+      color: white;
+      }
